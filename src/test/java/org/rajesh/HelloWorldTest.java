@@ -10,9 +10,9 @@ import static org.hamcrest.core.IsEqual.equalTo;
 class HelloWorldTest {
 
     @Test
-    void testGetHelloWorld(){
+    void testGetHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
-        assertThat("Hello World text did not match", "Hello World", is(equalTo(helloWorld.getHelloWorld())));
+        assertThat("Hello World text did not match", helloWorld.getHelloWorld(), is(equalTo("Hello World")));
     }
 
 }
